@@ -19,11 +19,33 @@ namespace WebForms
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (listBox1.Items.Count == 0)
+            {
+
+                MoveItem2.Enabled = false;
+                MoveAll2.Enabled = false;
+            }
+            else
+            {
+                MoveItem2.Enabled = true;
+                MoveAll2.Enabled = true;
+            }
 
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (listBox2.Items.Count == 0)
+            {
+
+                MoveItem.Enabled = false;
+                MoveAll.Enabled = false;
+            }
+            else
+            {
+                MoveItem.Enabled = true;
+                MoveAll.Enabled = true;
+            }
 
         }
 
@@ -36,6 +58,8 @@ namespace WebForms
             }
 
             listBox2.Items.Clear();
+            listBox1_SelectedIndexChanged(sender, e);
+            listBox2_SelectedIndexChanged(sender, e);
 
         }
 
@@ -48,6 +72,9 @@ namespace WebForms
             }
 
             listBox1.Items.Clear();
+            listBox1_SelectedIndexChanged(sender, e);
+            listBox2_SelectedIndexChanged(sender, e);
+
         }
 
 
@@ -66,7 +93,8 @@ namespace WebForms
                 listBox2.Items.Remove(listBox2.SelectedItems[0]);
             }
 
-
+            listBox1_SelectedIndexChanged(sender, e);
+            listBox2_SelectedIndexChanged(sender, e);
         }
 
 
@@ -83,6 +111,9 @@ namespace WebForms
             {
                 listBox1.Items.Remove(listBox1.SelectedItems[0]);
             }
+            listBox1_SelectedIndexChanged(sender, e);
+            listBox2_SelectedIndexChanged(sender, e);
+
         }
 
 
