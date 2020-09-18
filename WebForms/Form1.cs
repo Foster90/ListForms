@@ -29,7 +29,12 @@ namespace WebForms
 
         void MoveAll_OnClick1(object sender, EventArgs e)
         {
-            MessageBox.Show("Test");
+            
+            foreach (var item in listBox2.Items)
+            {
+
+                listBox1.Items.Add(item);
+            }
 
         }
 

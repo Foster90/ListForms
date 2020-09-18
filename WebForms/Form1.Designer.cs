@@ -59,10 +59,10 @@ namespace WebForms
             this.listBox2.Size = new System.Drawing.Size(195, 238);
             this.listBox2.TabIndex = 1;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
-            listBox2.Items.Add("Geeks");
-            listBox2.Items.Add("GFG");
-            listBox2.Items.Add("GeeksForGeeks");
-            listBox2.Items.Add("gfg");
+            listBox2.Items.Add("Test1");
+            listBox2.Items.Add("Test2");
+            listBox2.Items.Add("Test3");
+            listBox2.Items.Add("Test4");
             // 
             // MoveItem
             // 
