@@ -21,5 +21,43 @@ namespace WebForms
         {
 
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        void MoveAll_OnClick1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Test");
+
+        }
+
+
+        void MoveAll2_OnClick1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Test");
+        }
+
+
+        void Moveitem_OnClick1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Test");
+        }
+
+
+        void Moveitem2_OnClick1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Test");
+        }
+
+
+
+
+
+
+
+
+
     }
 }

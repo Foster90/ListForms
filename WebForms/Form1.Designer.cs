@@ -1,4 +1,6 @@
-﻿namespace WebForms
+﻿using System;
+
+namespace WebForms
 {
     partial class Form1
     {
@@ -28,8 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
-                  
+            this.listBox1 = new System.Windows.Forms.ListBox();                  
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.MoveItem = new System.Windows.Forms.Button();
             this.MoveItem2 = new System.Windows.Forms.Button();
@@ -63,7 +64,7 @@
             listBox2.Items.Add("GeeksForGeeks");
             listBox2.Items.Add("gfg");
             // 
-            // button1
+            // MoveItem
             // 
             this.MoveItem.Location = new System.Drawing.Point(60, 361);
             this.MoveItem.Name = "Move Item";
@@ -71,6 +72,7 @@
             this.MoveItem.TabIndex = 2;
             this.MoveItem.Text = "Move Item";
             this.MoveItem.UseVisualStyleBackColor = true;
+            MoveItem.Click += new EventHandler(Moveitem_OnClick1);
             // 
             // MoveItem2
             // 
@@ -80,6 +82,7 @@
             this.MoveItem2.TabIndex = 3;
             this.MoveItem2.Text = "MoveItem2";
             this.MoveItem2.UseVisualStyleBackColor = true;
+            MoveItem2.Click += new EventHandler(Moveitem2_OnClick1);
             // 
             // MoveAll
             // 
@@ -89,6 +92,7 @@
             this.MoveAll.TabIndex = 4;
             this.MoveAll.Text = "MoveAll";
             this.MoveAll.UseVisualStyleBackColor = true;
+            MoveAll.Click += new EventHandler(MoveAll_OnClick1);
             // 
             // MoveAll2
             // 
@@ -98,6 +102,7 @@
             this.MoveAll2.TabIndex = 5;
             this.MoveAll2.Text = "MoveAll2";
             this.MoveAll2.UseVisualStyleBackColor = true;
+            MoveAll2.Click += new EventHandler(MoveAll2_OnClick1);
             // 
             // Form1
             // 
