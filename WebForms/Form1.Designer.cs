@@ -43,14 +43,15 @@ namespace WebForms
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Items.AddRange(new object[] {
-            "Geeks",
-            "GFG",
-            "GeeksForGeeks",
-            "gfg"});
+            "John",
+            "Tom",
+            "Sue",
+            "Jen"});
             this.listBox1.Location = new System.Drawing.Point(60, 88);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(197, 238);
             this.listBox1.TabIndex = 0;
+            
             // 
             // listBox2
             // 
@@ -130,6 +131,7 @@ namespace WebForms
             this.Controls.Add(this.listBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+          
             this.ResumeLayout(false);
             this.PerformLayout();
 
