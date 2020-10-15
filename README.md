@@ -1,7 +1,4 @@
-# ListForms
-WebForms
-
-Sencon Programming Exercises
+Programming Exercises
 
 Exercise 1:
 Create a Windows application with 2 ListBox controls side by side and buttons to move the list items from one list to another.
